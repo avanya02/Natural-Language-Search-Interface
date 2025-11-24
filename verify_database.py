@@ -1,6 +1,6 @@
 import psycopg2
 
-PASSWORD = "Avanya@123" 
+PASSWORD = "********" 
 
 print("Checking PostgreSQL connection...")
 
@@ -84,4 +84,5 @@ try:
     
 except Exception as e:
     print(f"✗ Error checking companydb: {e}")
+
     print("  → Run: python setup_and_populate.py")
