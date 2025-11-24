@@ -2,7 +2,7 @@ import psycopg2
 from psycopg2 import sql
 from psycopg2.extensions import ISOLATION_LEVEL_AUTOCOMMIT
 
-PASSWORD = "Avanya@123"  
+PASSWORD = "********"  
 
 
 conn = psycopg2.connect(
@@ -103,4 +103,5 @@ cur.close()
 conn.close()
 
 print(" Database created and populated successfully!")
+
 print("Run: streamlit run app.py")
