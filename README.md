@@ -1,2 +1,10 @@
-# Natural-Language-Search-Interface
-Natural Language Search Interface for querying a PostgreSQL database using Streamlit 
+# Natural Language Search (No Docker Version)
+
+1. Install PostgreSQL → password = "password"
+2. Put your OpenAI key in `.env`
+3. Run these commands in order:
+
+```bash
+pip install -r requirements.txt
+python setup_and_populate.py
+streamlit run app.py
