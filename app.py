@@ -1,7 +1,7 @@
 import streamlit as st
 import psycopg2
 
-PASSWORD = "Avanya@123"   
+PASSWORD = "*******"   
 
 conn = psycopg2.connect(host="localhost", dbname="companydb", user="postgres", password=PASSWORD)
 cur = conn.cursor()
@@ -32,4 +32,5 @@ if st.button("Search", type="primary"):
         st.dataframe([dict(zip(cols, row)) for row in rows])
     except Exception as e:
         st.error(str(e))
+
 
