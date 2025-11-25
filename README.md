@@ -14,5 +14,6 @@ A complete Natural Language → SQL search engine running locally on Windows wit
 3. Update password in `app.py`
 4. Run:
 ```bash
-python setup_and_populate.py
+python populate_data.py
 streamlit run app.py
+
